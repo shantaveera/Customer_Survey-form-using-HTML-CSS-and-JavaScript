@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: beige;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    background-blend-mode:multiply ;
+    font-size: 1.1em;
+    font-family: 'Poppins';
+}
+.heading{
+    text-align: center;
+    color: black;
+    margin: auto;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#content1{
+    width: 90%;
+    margin: auto;
+}
+
+form{
+    background-color: rgba(0,0,0,0.7);
+    padding-top:30px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54%;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+
+form .box{
+    width: 100%;
+    height: 2.8em;
+    position: relative;
+    bottom: 10px;
+    border: 0;
+    border-radius: 5px;
+}
+#option1 select{
+    width: 100%;
+    height: 2.8em;
+    position: relative;
+    bottom: 10px;
+    border: 0;
+    border-radius: 5px;
+}
+form .button{
+    width: 100%;
+    margin-bottom: 20px;
+    height: 3em;
+    position: relative;
+    top: 11px;
+    background-color: rgb(18, 219, 78);
+    border:none;
+    color: rgb(255, 255, 2555);
+    border-radius: 5px;
+    cursor: pointer;
+}
+input::placeholder{
+    font-size: 1.1em;
+    position: relative;
+    left: 10px;
+    width: 50%;
+    font-weight: 500;
+}
+form .error{
+    color: red;
+}
+
+@media screen and (max-width:600px) {
+    form{
+        width: 100%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="Surveyform.css">
+</head>
+<body>
+    <div class="heading">
+        <h1>Customer Survey Form</h1></div>
+    <form id="survey-form">
+        <div id="content1">
+            <label for="first-name">First Name:</label><br><br>
+            <input type="text" name="name" id="first-name" placeholder="Enter your first name" class="box" required> <br><br>
+            <label for="last-name">Last Name:</label><br><br>
+            <input type="text" name="name" id="last-name" placeholder="Enter your last name" class="box" required> <br><br>
+            <label for="dob">Date of Birth:</label><br><br>
+            <input type="date" name="name" id="dob" class="box" required> <br> <br>
+            <label for="country">Country:</label><br><br>
+            <div id="option1">
+            <select id="country" required>
+                <option value="select">Select Country</option>
+                <option value="India">India</option>
+                <option value="USA">United States</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">United Kingdom</option>
+                <option value="Africa">Africa</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <!-- Add more country options here -->
+            </select><br><br></div>
+            <label for="gender">Gender:</label><br> <br>
+                <input type="checkbox" id="male" name="gender" value="Male"> <label for="male">Male</label>
+                <input type="checkbox" id="female" name="gender" value="Female"> <label for="female">Female</label><br><br>
+            <label for="profession">Profession:</label><br><br>
+            <input type="text" name="name" id="profession" placeholder="Enter your profession" class="box" required> <br><br>
+            <label for="email">Email:</label><br><br>
+            <input type="text" name="name" id="email" placeholder="Enter your Email" class="box" required> <br>
+            <p class="error" id="email-error"></p><br>
+            <label for="mobile-number">Phone Number:</label><br><br>
+            <input type="text" name="mobile-number" id="mobile-number" placeholder="Enter your number" class="box" required pattern="[0-9]*"> <br><br>
+            
+            <button type="button" id="submit-btn" class="button"><h3>Submit</h3></button>
+            <button type="button" id="reset-btn" class="button"><h3>Reset</h3></button>
+            <p class="error" id="required-fields-error"></p>
+        </div>
+        
+    </form>
+    <script src="Surveyform.js"></script>
+</body>
+</html>
